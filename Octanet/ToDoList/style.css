@@ -1,0 +1,122 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    overflow: hidden;
+    background: #53b8a9;
+    /* background: #3c87ff; */
+}
+
+.container{
+    max-width: 400px;
+    margin: 125px  auto;
+    background: #fff;
+    border-radius: 7px;
+    padding: 28px 0;
+}
+.task-input{
+    position: relative;
+    height: 50px;
+    padding: 0 25px;
+}
+
+.task-input i{
+    position: absolute;
+    top: 50%;
+    font-size: 30px;
+    transform: translate(15px, -50%);
+    color: #53b8a9;
+}
+
+.task-input input{
+    border: 2px solid #53b8a9;
+    border-radius: 5px;
+    outline: none;
+    padding: 0 20px 0 55px;
+    font-size: 17px;
+    height: 100%;
+    width: 100%;
+}
+
+.task-input input::placeholder{
+    color: #53b8a9;
+    font-weight: lighter;
+}
+.controls, li{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.controls{
+    padding: 20px 25px 15px 25px;
+    border-bottom: 2px solid #ccc;
+}
+
+.filters span{
+    cursor: pointer;
+    margin: 0 8px;
+    font-size: 17px;
+}
+.filters span:first-child{
+    margin-left: 0;
+}
+
+.filters span.active{
+    color: rgb(83, 184, 169, 80%);
+}   
+
+.controls .clearBtn{
+    padding: 7px 10px;
+    outline: none;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 13px;
+    background: #53b8a9;
+    color: #fff;
+}
+
+.task-box{
+    margin: 20px 25px;
+}
+
+.task-box .task{
+    list-style: none;
+    font-size: 17px;
+    margin-bottom: 18px;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 15px;
+}
+
+.task-box .task:last-child{
+    margin-bottom: 0;
+    border-bottom: 0;
+    padding-bottom: 0;
+}
+
+.task label{
+    display: flex;
+}
+
+.task label p.checked{
+   font-style: italic;
+   color: rgba(0,0,0,0.2);
+}
+
+.task label input{
+    margin-right: 12px;
+}
+
+.settings i{
+    cursor: pointer;
+    margin: 0 3px;
+    font-size: 19px;
+    border: none;
+} 
+
+.settings i:hover{
+    background: rgb(203, 232, 246);
+}
